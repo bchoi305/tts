@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /worker
+COPY . /worker
+RUN pip install redis rq
+CMD ["rq", "worker", "default"]

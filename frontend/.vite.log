@@ -1,0 +1,13 @@
+
+> tts-frontend@0.0.1 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.20  ready in 40743 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+10:39:54 AM [vite] vite.config.js changed, restarting server...
+Re-optimizing dependencies because lockfile has changed
+10:39:54 AM [vite] server restarted.

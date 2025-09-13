@@ -1,0 +1,220 @@
+================================================================================
+POWERPOINT SLIDE NOTES EXTRACTION
+File: Choi BW 6.pptx
+Extracted on: August 24, 2025
+================================================================================
+
+SLIDE 1:
+--------
+"Thank you, chair person, for the kind introduction. I'm honored to have the opportunity to speak at VSRNM and extend my sincere gratitude to the organizing committee for inviting me. 1
+
+================================================================================
+
+SLIDE 2:
+--------
+A brief disclosure before we start: I am the CEO and founder of Phantomics, a company I established five years ago to revolutionize cardiac care. We've developed AI-powered software specifically designed to enhance cardiac MRI and CT analysis.2
+
+================================================================================
+
+SLIDE 3:
+--------
+(AI potential) As we enter an era of rapid AI advancement, the potential impact on medicine is profound. First, AI can rival or even surpass human expertise, using vast data-driven algorithms to make accurate decisions and predictions. Second, AI isn't limited by physical boundaries—it can provide high-speed, consistent medical support to anyone, anywhere in the world. Third, AI can uncover hidden patterns and deliver insights beyond human perception, giving us a deeper understanding of complex medical data. Together, these strengths position AI to truly transform the way we deliver and experience healthcare.3
+
+================================================================================
+
+SLIDE 4:
+--------
+(CVI) The push for AI in cardiovascular imaging stems from real, pressing challenges. We're seeing a surge in the number and complexity of imaging exams—think multi-dimensional CTs and MRIs—which puts a huge strain on both clinicians and workflow. Many current techniques are highly operator-dependent, leading to variability and risk of missed findings, especially with rising workloads and fatigue. These gaps can have serious consequences for patients, from missed early diagnoses to delayed care. That's why innovation is critical. AI can automate complex measurements, enhance image quality, and boost diagnostic accuracy. This digital transformation offers the promise of earlier detection and truly personalized cardiac care.4
+
+================================================================================
+
+SLIDE 5:
+--------
+(Use of AI in CVI) This diagram shows how AI is transforming every step of cardiac CT and MRI—from selecting the right test and optimizing protocols, to enhancing image quality and streamlining analysis. AI helps spot subtle findings, supports risk assessment, and automates reporting, all while raising important issues like ethics and sustainability. Ultimately, AI is making cardiac imaging more precise, efficient, and patient-centered.5
+
+================================================================================SLIDE 6:
+--------
+(TRL) To better understand where we are on this journey, let's look at how technology readiness varies across different AI tools. This image maps out the TRL of AI tools in cardiac CT and MRI, from early research to full clinical use. On the left, areas like patient selection and workflow optimization are still being validated. But as we move right, we see that many AI tools for image reconstruction and quantitative analysis are already deployed in real-world practice. Mature applications like deep learning CT reconstruction and automated plaque analysis are now part of routine care, reflecting the rapid yet careful progress in bringing AI safely into cardiac imaging.6
+
+================================================================================
+
+SLIDE 7:
+--------
+7. First, Let's move on the AI in Radiologic diagnosis in cardiovascular imaging.
+
+================================================================================
+
+SLIDE 8:
+--------
+"Last year, Professor Shihua Zhao and his team at Fuwai Hospital published groundbreaking research on AI-enabled cardiac MRI for cardiovascular disease screening and diagnosis. This study marks a significant milestone, showcasing AI's transformative potential in cardiac care."8
+
+================================================================================
+
+SLIDE 9:
+--------
+"The team developed and tested two distinct AI models: a screening model for 11 cardiac diseases using 4-chamber and short-axis cine images, and a diagnostic model utilizing cine and late gadolinium enhancement (LGE) CMR images. Both models, trained on data from 9,719 patients, demonstrated high performance across internal and external datasets. While the diagnostic model showed a slight performance decrease on external data, its overall accuracy remained high. Significantly, the diagnostic model even outperformed cardiologists in identifying pulmonary arterial hypertension, underscoring AI's ability to uncover previously unrecognized CMR features."9
+
+================================================================================
+
+SLIDE 10:
+--------
+(CTA) Researchers evaluated an AI tool analyzing coronary CT angiography – CCTA – right in the clinic. With over a thousand patients, this AI rapidly provided critical insights like calcium scores and CAD-RADS categories, all within five minutes.Comparing AI results to expert reports, they found substantial agreement. The AI was highly effective at ruling out significant coronary artery disease, boasting a 98% negative predictive value.This study proves on-premise AI can quickly and reliably assess CCTA images, accurately stratifying risk and powerfully supporting clinical decisions alongside expert radiologists.AI-based AutomatedCoronary Analysis software (version 4.2.0.0; Siemens Healthineers)10
+
+================================================================================
+
+SLIDE 11:
+--------
+(Meta-analsysis) AI models show high accuracy for coronary stenosis detection across various CT scans, a meta-analysis confirms. They agree substantially with expert radiologists and reduce processing time by a remarkable 76% – cutting a 12-minute scan review to just three minutes. Critically, AI boosts diagnostic performance for all readers and excels at identifying high-risk plaques. This proves Deep Learning is an accurate, efficient, and invaluable tool, ready to transform clinical coronary stenosis detection. (Quick note: this summary was drafted by Claude and Gemini in just five minutes!)11
+
+================================================================================
+
+SLIDE 12:
+--------
+Now, focusing specifically on Automation with AI for labor-intensive measurements in cardiovascular imaging
+
+================================================================================SLIDE 13:
+--------
+(CACS) Let's start with coronary artery calcium scoring. Coronary artery disease is the world's leading killer. Early risk assessment is vital, and coronary artery calcium scoring using CT scans is a powerful tool.But its widespread use is limited by cost, lack of coverage, and often, calcium goes unreported on routine chest CTs.That's where AI steps in. Researchers developed two deep learning models. One, for dedicated heart scans, matches expert human scoring in seconds. The other can accurately score CAC even on routine chest CTs – enabling crucial opportunistic screening for many more patients.Validated across diverse data, these AI tools could identify more at-risk individuals, leading to earlier interventions and, ultimately, better outcomes in preventing heart disease.13
+
+================================================================================
+
+SLIDE 14:
+--------
+(Biventricular Function) Artificial intelligence is rapidly enhancing how we measure heart function using cardiac MRI. In a recent study of 200 patients, three deep-learning algorithms fully automated assessments of ejection fraction and left ventricular mass, showing excellent agreement with expert evaluations. AI matched clinical experts about 80-86% of the time when categorizing ejection fraction, and importantly, both AI and expert assessments predicted major cardiovascular events similarly. While promising, AI tools still require further refinement to reliably guide clinical decisions, especially for the right ventricle.14
+
+================================================================================
+
+SLIDE 15:
+--------
+(MWT) Left ventricular maximum wall thickness, is critical for diagnosing hypertrophic cardiomyopathy, yet manual measurement is prone to variability. Researchers tested an automated machine-learning algorithm against 11 international experts using MRI scans from 60 patients.  (click) The AI method proved significantly more consistent, with less variation between repeated scans, requiring fewer patients to detect clinical changes.  (click) In contrast, experts often varied widely in measurements and even changed risk classifications. These findings suggest AI-driven MWT measurement can enhance diagnostic accuracy, improve patient risk stratification, and strengthen clinical trial designs.15
+
+================================================================================
+
+SLIDE 16:
+--------
+(Mapping) Researchers have created an AI tool that automatically segments and analyzes cardiac MRI T1 and T2 mapping, crucial methods for assessing heart tissue health. Trained on data from over 800 patients, this neural network accurately outlined heart boundaries and provided precise tissue mapping values, closely matching expert cardiologist results. Its accuracy, illustrated by scatterplots and Bland-Altman plots, proved comparable to human expert agreement. Integrated directly into MRI scanner workflows. 16
+
+================================================================================
+
+SLIDE 17:
+--------
+(Polar map) Imagine expert-level analysis, fast and reliable, right at your fingertips. AI promises more consistent and efficient diagnosis in clinics.Take these polar maps, for example. They visualize key heart tissue markers. See the diffuse red in amyloidosis in T1, ECV, and LGE? That's widespread damage. Myocarditis shows broader red for swelling in T2 map. Notice the blue in T1 map in Fabry disease? That indicates unique lipid buildup. Even subtle and diffuse changes of T1 map in DCM or artery-specific issues in ischemia become instantly clear.This visual AI power offers quicker, more confident decisions for healthier hearts.17
+
+================================================================================
+
+SLIDE 18:
+--------
+As we explore the future of AI in cardiovascular imaging, one of the most promising areas is the assessment of atherosclerotic plaque. This is where imaging, clinical trials, and AI converge to redefine risk stratification and patient care. Let me walk you through the evidence and innovations shaping this field.18
+
+================================================================================SLIDE 19:
+--------
+(better outcome with CCTA) The SCOT-HEART trial demonstrated that adding coronary CTA to standard care for patients with stable chest pain significantly reduced the risk of coronary heart disease death or nonfatal myocardial infarction at 5 years.With a median 10-year follow-up, CCTA-guided management continued to show lasting benefit, reinforcing the role of plaque imaging in long-term outcomes.19
+
+================================================================================
+
+SLIDE 20:
+--------
+(High risk plaque matters) In a secondary analysis of the PROMISE trial, major adverse cardiovascular events occurred in 3% of patients. Importantly, those with high-risk plaque had a much higher event rate—6.4% versus 2.4%.Even after adjusting for stenosis severity and ASCVD risk score, high-risk plaque remained an independent predictor, with an adjusted hazard ratio of 1.72. This highlights the prognostic power of plaque features beyond just luminal narrowing."
+================================================================================
+
+SLIDE 21:
+--------
+(total plaque volume matters) In patients with advanced coronary disease and moderate-to-severe ischemia, plaque quantification provided additional prognostic value.AI-based quantitative CT—AI-QCT—showed that total plaque volume was the strongest predictor of death or myocardial infarction. At 4 years, adding AI-derived plaque metrics improved model discrimination, with the AUC rising from 0.608 to 0.654.While vessel count predicts near-term events, long-term outcomes are better captured by plaque burden and composition.21
+
+================================================================================
+
+SLIDE 22:
+--------
+(AI Industry) Several companies—Cleerly, Elucid, and HeartFlow—are now translating this science into practice. Their AI-powered plaque quantification tools are reimbursed under Category III CPT codes, and validated against IVUS and pathology.Adding AI-derived plaque data to baseline risk factors has consistently improved outcome prediction at 6 months, 2 years, and 4 years. In short, AI has made reliable, scalable plaque quantification feasible in clinical practice.22
+
+================================================================================
+
+SLIDE 23:
+--------
+(Technical consideration) Despite this progress, technical challenges remain.Fixed HU thresholds (100–500) for contrast-enhanced CT overlap with plaque subtypes and don't account for individual variation. Adaptive thresholding, based on each patient's luminal attenuation, offers a more personalized approach, though no method has proven definitively superior.Variability in reconstruction, scanner type, and tube voltage continues to impact reproducibility.23
+
+================================================================================
+
+SLIDE 24:
+--------
+Photon-counting CT is another breakthrough. Compared with conventional detectors, PCD CT reduced total plaque volume estimates by nearly one-third due to lower fibrotic plaque volumes, while low-attenuation plaque volumes were actually higher.Most importantly, PCD CT improved reproducibility of high-risk plaque measurements. However, HU thresholds may not transfer between EID and PCD systems, emphasizing the need for scanner-specific calibration.Future research will need to focus on large-scale deployment of AI-assisted coronary analysis, personalized medicine through the integration of multiple data types, and therapeutic monitoring of plaque progression to validate these recommendations through prospective, randomized, controlled clinical trials.24
+
+================================================================================SLIDE 25:
+--------
+Looking forward, the horizon is clear:Large-scale deployment of AI-assisted coronary analysis,Integration of multimodal data for personalized care, andTherapeutic monitoring of plaque progression.Ultimately, prospective randomized trials will be needed to validate and cement these advances.Plaque imaging, powered by AI, is not just about diagnosis—it's becoming a key to prognosis, therapy, and precision cardiology.25
+
+================================================================================
+
+SLIDE 26:
+--------
+Despite these exciting results, real-world clinical adoption remains a major hurdle.Let's take a closer look."
+
+================================================================================
+
+SLIDE 27:
+--------
+If so much technology is available, why isn't it everywhere yet? It's question many of us have asked.Despite over 500 medical AI devices being approved by the U.S. FDA, their real-world clinical utilization remains limited. A recent study systematically tracked the adoption of these devices using CPT codes, which document billing for medical procedures. By analyzing 11 billion claims from 2018 to 2023, the study found that medical AI adoption remains in its early stages. Published Nov 9 2023 NEJM AIFDA approved 500 AI devicesCPT code I, III2018.1.1 ~ 2023.6.111 billion CPT claims, - 1만개 – top 2Incentives and barriers needed.27
+
+================================================================================
+
+SLIDE 28:
+--------
+Key barriers include data quality, integration challenges, lack of transparency, legal ambiguity, and slow regulatory processes. Privacy concerns are rising, and AI can sometimes worsen rather than reduce healthcare disparities. Bridging the gap between promise and practice will require transparent, explainable AI and close collaboration between academia, industry, and regulators. This brings us to another important issue—bridging the gap between research and actual practice.28
+
+================================================================================
+
+SLIDE 29:
+--------
+In this commentary, the author highlights that issue: most clinical prediction models published in research are never actually implemented in clinical practice. This reveals a significant gap between academic research and real-world application.To bridge this gap, the author proposes a practical checklist for developing clinical AI tools. (click)The key focus is on ensuring that these tools provide substantial benefits to clinical decision-making while being easy to use, making them more accessible and effective for healthcare professionals.29
+
+================================================================================
+
+SLIDE 30:
+--------
+Close and sustainable collaboration between academia and industry is essential to maximize the clinical benefits of CMR. What I want to emphasize most is the critical need for thorough validation of AI in medicine, conducted by hospitals and imaging experts using real-world data.30
+
+================================================================================
+
+SLIDE 31:
+--------
+Looking ahead, new paradigms in AI promise to reshape our approach entirely.We've reached the age of autonomous AI, and I'd like to share some key insights about where we stand.31
+
+================================================================================
+
+SLIDE 32:
+--------
+(LLM in CVI) Large Language Models are transforming cardiac imaging! They're already improving report generation, clinical decision support, and data management for cardiovascular CT and MRI.In research, LLMs like GPT-4 are drafting radiology reports, extracting key information, and even answering patient questions. Recent studies show these models can match human experts in tasks like labeling and summarizing, streamlining workflows and boosting consistency.The future holds multimodal LLMs, integrating images and text for even more powerful analysis. While AI promises incredible efficiency, careful validation remains crucial for safety. Overall, LLMs offer exciting potential to enhance accuracy, efficiency, and accessibility in cardiovascular imaging.32
+
+================================================================================SLIDE 33:
+--------
+CAD-RADS 2.0 scoring in cardiac CT is vital, but can it be automated? The study investigates if Large Language Models can generate these scores from reports.(Click)The researchers tested top LLMs like GPT-4o and Llama3 70b on 200 cardiac CT reports. The results are impressive: GPT-4o achieved 93% accuracy, and Llama3 70b reached 92.5% in generating full CAD-RADS 2.0 scores – matching expert consensus!This shows LLMs can enhance reporting efficiency and consistency. Plus, accurate open-source models offer the benefit of secure local hosting. This is a significant step towards more streamlined cardiac CT interpretation!33
+
+================================================================================
+
+SLIDE 34:
+--------
+We're witnessing truly autonomous AI systems built on three game-changing technologies working together.Large Language Models serve as the brain, enabling natural human-machine communication through sophisticated text understanding and generation.AI Agents act as the hands and feet—planning, deciding, and executing complex tasks without constant oversight. They don't just respond; they think ahead and take action.RAG—Retrieval-Augmented Generation—functions as the memory system, connecting AI to vast, current databases for accurate, up-to-date responses beyond training data.Together, these create AI that works independently: understanding context, accessing real-time information, and taking meaningful action autonomously.34
+
+================================================================================
+
+SLIDE 35:
+--------
+"Comparing humans and AI is less about individual competition and more about individual versus collective intelligence. AI's strength lies in tapping into vast, collective experience and knowledge—offering accuracy, consistency, and speed that far exceed one person's abilities. The challenge is to combine this collective power with human judgment for the best patient outcomes."35
+
+================================================================================
+
+SLIDE 36:
+--------
+Are we ready to move beyond being just users of technology and take on new roles as leaders and stewards in this transformation?As AI transforms medicine, doctors are evolving beyond traditional clinical roles into four critical positions. First, they're visionary leaders who identify real clinical needs and guide AI development to truly serve patients. Second, physicians serve as clinical data stewards, ensuring medical datasets are accurate, relevant, and representative of real-world patient complexities.Third, doctors act as clinical validators, rigorously testing AI tools for safety and usability before widespread adoption. Finally, they're change agents and educators, helping colleagues, institutions, and patients understand and trust these new technologies."By embracing these expanded roles, physicians ensure AI is integrated responsibly and meaningfully, ultimately improving outcomes for all."36
+
+================================================================================
+
+SLIDE 37:
+--------
+Thank you for your attention.37
+
+================================================================================
+
+END OF SLIDE NOTES
+Total slides: 37
+Extraction completed on: August 24, 2025

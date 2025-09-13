@@ -1,0 +1,13 @@
+uvicorn
+
+fastapi
+uvicorn[standard]
+redis
+rq
+python-docx
+pypdf
+requests
+ffmpeg-python
+boto3
+python-multipart
+typing-extensions
