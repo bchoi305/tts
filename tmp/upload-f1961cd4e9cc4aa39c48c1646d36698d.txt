@@ -1,0 +1,1 @@
+Testing real VibeVoice with external API. This should produce real speech, not tones.

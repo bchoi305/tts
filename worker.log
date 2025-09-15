@@ -1,0 +1,11 @@
+OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES PATH="/opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/bin:/Users/my_studio/.local/share/mamba/envs/ai38/bin:/Users/my_studio/.nvm/versions/node/v24.3.0/bin:/Users/my_studio/.local/share/mamba/condabin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin" python start_simple_worker.py
+[Worker] Starting SimpleWorker (no forking) ...
+[Worker] Listening on queue: tts
+[Worker] Redis URL: redis://localhost:6379/0
+[Worker] Press Ctrl+C to stop.
+10:38:01 Worker 0ef1a3e888724912afad747e9394f6d6: started with PID 80560, version 2.6.0
+10:38:01 Worker 0ef1a3e888724912afad747e9394f6d6: subscribing to channel rq:pubsub:0ef1a3e888724912afad747e9394f6d6
+10:38:01 *** Listening on tts...
+10:38:01 Worker 0ef1a3e888724912afad747e9394f6d6: cleaning registries for queue: tts
+10:38:01 tts: app.worker.process_tts_job('/Volumes/G-DRIVE/projects/tts/tmp/upload-700573254cc34c609ab566c320217df5...., 'test_file.txt', 'Frank [EN]') (a846760c-aca4-4d1f-b910-35bdabb7e58d)
+make: *** [worker] Killed: 9

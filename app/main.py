@@ -55,7 +55,11 @@ async def create_tts_job(
         with open(dest, "wb") as f:
             f.write(await file.read())
 
-        job = enqueue_tts_job(dest, file.filename or fname, preset)
+        selected = preset or settings.fallback_preset
+        if settings.presets and selected not in settings.presets:
+            logger.warning("Unknown preset '%s' requested; using fallback '%s'", selected, settings.fallback_preset)
+            selected = settings.fallback_preset
+        job = enqueue_tts_job(dest, file.filename or fname, selected)
         return {"job_id": job.id, "status": "queued"}
     except Exception as e:
         logger.exception("Failed to enqueue TTS job: %s", e)

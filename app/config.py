@@ -17,7 +17,7 @@ class Settings:
 
     # Storage
     storage_backend: str = os.getenv("STORAGE_BACKEND", "local")  # local | s3
-    storage_dir: str = os.getenv("STORAGE_DIR", "storage")
+    storage_dir: str = os.path.realpath(os.getenv("STORAGE_DIR", "storage"))
 
     # S3 / MinIO
     s3_bucket: str | None = os.getenv("STORAGE_BUCKET")
@@ -30,6 +30,11 @@ class Settings:
     fal_key: str | None = os.getenv("FAL_KEY")
     fal_url: str = os.getenv("FAL_URL", "https://fal.run/fal-ai/vibevoice")
     mock_tts: bool = os.getenv("MOCK_TTS", "false").lower() in {"1", "true", "yes"}
+    # Network behavior
+    fal_connect_timeout: int = int(os.getenv("FAL_CONNECT_TIMEOUT", "10"))
+    fal_read_timeout: int = int(os.getenv("FAL_READ_TIMEOUT", "300"))  # per request, seconds
+    fal_max_attempts: int = int(os.getenv("FAL_MAX_ATTEMPTS", "5"))
+    fallback_preset: str = os.getenv("FALLBACK_PRESET", "Frank [EN]")
     presets: list[str] = field(default_factory=lambda: (
         [p.strip() for p in os.getenv("PRESETS", "").split(",") if p.strip()]
         or [
@@ -43,7 +48,7 @@ class Settings:
     ))
 
     # Runtime
-    tmp_dir: str = os.getenv("TMP_DIR", "tmp")
+    tmp_dir: str = os.path.realpath(os.getenv("TMP_DIR", "tmp"))
     tts_job_timeout: int = int(os.getenv("TTS_JOB_TIMEOUT", "1800"))  # seconds
 
 

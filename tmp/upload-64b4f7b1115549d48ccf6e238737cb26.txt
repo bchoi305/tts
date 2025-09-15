@@ -1,0 +1,187 @@
+=== Slide 1 Notes ===
+“
+“Thank you, Chair, for that kind introduction.”
+1
+
+=== Slide 2 Notes ===
+“Before I begin, a brief disclosure. I am the CEO and founder of
+Phantomics
+, a company developing AI-powered cardiac imaging solutions. My perspective today combines both clinical and innovation experience.”
+2
+
+=== Slide 3 Notes ===
+“Chest pain is one of the most common reasons for ER visits in the U.S., nearly 8 million annually.
+Most cases are benign, but a small fraction involve ACS, pulmonary embolism, or aortic dissection.
+The challenge is rapid and accurate differentiation, since ECGs and blood tests are often inconclusive. This leads to over-triage, long ER stays, high costs, and overcrowding—highlighting the need for faster, safer triage.”
+3
+
+=== Slide 4 Notes ===
+“This chart shows causes of chest pain by age.
+Nonspecific chest pain dominates across all groups. In younger patients, painful respiration and abdominal pain are common.
+In older adults, cardiac conditions rise—atherosclerosis, MI, heart failure, arrhythmias.
+These trends highlight the need for age-tailored strategies in the ER.”
+4
+
+=== Slide 5 Notes ===
+“CCTA is increasingly guideline-endorsed.
+The 2021 U.S. guideline gives Class I, Level A for intermediate-risk patients with no known CAD after inconclusive ACS evaluation.
+The 2023 European guideline gives Class
+IIa
+, Level A for suspected ACS without ECG or troponin changes.
+Together, these confirm CCTA’s growing role in safe and efficient decision-making.”
+5
+
+=== Slide 6 Notes ===
+“The reason is clear: CCTA has a very high negative predictive value, allowing safe and rapid exclusion of CAD.
+It reduces length of stay in chest pain units and improves long-term outcomes by lowering future coronary events and cardiac deaths.
+CCTA is now a cornerstone in chest pain evaluation.”
+6
+
+=== Slide 7 Notes ===
+“This algorithm shows how CCTA fits in.
+For intermediate-risk patients with no known CAD, test choice depends on local expertise.
+If there’s a recent negative test, repeat testing may not be needed.
+Otherwise, CCTA or stress imaging are options. FFR-CT adds functional insight but turnaround time may limit use.
+High-risk disease, like left main or triple-vessel stenosis, should go directly to invasive angiography.”
+7
+
+=== Slide 8 Notes ===
+“CCTA rapidly rules out significant CAD, particularly in low-to-intermediate risk patients.
+It reduces time to diagnosis, shortens ER stays, cuts unnecessary admissions, and lowers costs.
+Importantly, it also provides anatomic detail—plaque burden and features—with strong prognostic value.”
+8
+
+=== Slide 9 Notes ===
+One of the greatest advantages of coronary CT angiography is its ability to rapidly and safely rule out ACS, with a negative predictive value approaching 100% in low- to intermediate-risk patients.
+In the ROMICAT trial, CCTA excluded ACS in 71% of patients with inconclusive initial assessment.
+Compared to traditional pathways, it significantly shortens time to diagnosis—ROMICAT II and CT-STAT showed reductions of up to 55%.
+This translates into much shorter ER stays—about 6 to 7 hours saved—and lower healthcare costs through fewer admissions and optimized resource use.
+9
+
+=== Slide 10 Notes ===
+This study highlights the importance of 24/7 cardiac CT angiography interpretation in the emergency department.
+Among 658 CCTA cases, examinations occurred across all hours, with a wide spectrum of CAD-RADS scores reflecting disease severity.
+In patients who proceeded to invasive coronary catheterization, the data show consistent links between CCTA findings and downstream management, including PCI and CABG.
+These results emphasize that timely, round-the-clock access to expert CCTA interpretation can directly impact patient triage and treatment decisions in acute care.
+10
+
+=== Slide 11 Notes ===
+“Yet access is limited.
+Only 46% of U.S. safety-net hospitals offer CCTA.
+Availability ranges from 8% in small hospitals to nearly 90% in large centers.
+There’s also a rural–urban gap—22% vs 57%—and a stark contrast between academic centers at 97% and non-academic at 41%.
+This inequity must be addressed.”
+.
+11
+
+=== Slide 12 Notes ===
+“A typical workflow begins with patient presentation, risk assessment by HEART score, troponins, and ECG.
+If appropriate, CCTA is performed—after IV prep, HR control if needed, and nitroglycerin.
+The scan is acquired and reconstructed for stenosis and plaque.
+Based on results: no CAD means safe discharge; non-obstructive CAD means medical therapy; obstructive or uncertain findings lead to cardiology consult, FFR-CT, or invasive angiography.”
+12
+
+=== Slide 13 Notes ===
+While CCTA offers clear benefits in the ER, several challenges limit its widespread use.
+Confidence and training remain key issues—many physicians are still unfamiliar or reluctant, and expertise is not always readily available.
+Resources and logistics, including scanner access and staff coverage, also create barriers.
+There are technical limitations and complexities in selecting the right patients image quality, radiation exposure, contrast use., etc.
+Together, these factors highlight the need for more education, streamlined protocols, and better integration of CCTA into emergency workflows.
+13
+
+=== Slide 14 Notes ===
+“In our own study of 766 off-hour CCTAs, discrepancies between resident preliminaries and final staff reports occurred in 11%.
+Predictors were low ED crowding index and positive calcium scores.
+Importantly, discrepancies led to more unnecessary invasive angiography.
+This highlights the need for better resident training and stronger decision support.”
+14
+
+=== Slide 15 Notes ===
+To expand the role of CCTA in the ER, several solutions are needed.
+Standardized protocols with AI-integrated pathways can ensure consistency and efficiency.
+Comprehensive education and training will build clinician confidence and expertise.
+Optimizing technology and accessibility, supported by robust AI implementation, will further streamline workflows.
+Finally, strengthening inter-department collaboration and focusing on value and cost-effectiveness will make CCTA a sustainable, high-impact tool in acute chest pain care.
+15
+
+=== Slide 16 Notes ===
+“Technology also plays a role.
+We compared single-source CT requiring beta-blockers to dual-source CT without HR control.
+Dual-source CT cut acquisition time, improved image quality, reduced nondiagnostic exams, and eliminated beta-blocker use—without affecting safety.
+This shows how new hardware can simplify ER workflows.”
+16
+
+=== Slide 17 Notes ===
+“AI’s impact extends beyond efficiency. It improves workflow and workload, but more importantly, integrates stenosis, plaque burden, and
+pericoronary
+fat with biomarkers and ECG.
+This enables earlier detection of subclinical disease and better prediction of major adverse cardiac events, moving us toward personalized risk assessment and care.”
+17
+
+=== Slide 18 Notes ===
+In our own work, a YOLO-based model trained on 10,000 images achieved over 90% sensitivity and nearly 97% negative predictive value—demonstrating clinical utility for safely ruling out obstructive CAD.”
+18
+
+=== Slide 19 Notes ===
+AI can transform the use of CCTA in the emergency setting.
+First, it accelerates triage and diagnosis by providing rapid preliminary analysis, flagging urgent cases, and cutting report turnaround times.
+Second, it reduces radiologist workload by automating segmentation, measurements, and draft reporting—freeing experts to focus on complex decision-making, and helping manage rising case volumes, especially after hours.
+Finally, AI improves standardization by reducing inter-observer variability, ensuring more consistent and reliable reporting across institutions.
+19
+
+=== Slide 20 Notes ===
+AI in cardiac CT goes far beyond simply detecting stenosis.
+It integrates multiple parameters—such as plaque burden, characteristics, and
+pericoronary
+fat—with clinical data like biomarkers, risk factors, and ECG.
+This enhances predictive power, allowing more accurate forecasting of major adverse cardiac events and the detection of subclinical disease.
+By generating individualized risk profiles, AI supports personalized medicine.
+For example, perivascular fat attenuation indexing from CCTA has emerged as a novel marker of coronary inflammation and future risk.
+20
+
+=== Slide 21 Notes ===
+“Clinical studies confirm this. A multicenter trial of 400 patients showed that AI-derived CAD extent was the strongest predictor of outcomes, with a hazard ratio of 88.
+Adding AI plaque data to clinical risk factors raised Harrell’s C-statistic from 0.80 to 0.94.
+21
+
+=== Slide 22 Notes ===
+AI also detects high-risk plaque features like positive remodeling, spotty calcification, low attenuation, and napkin-ring sign—allowing more refined risk stratification.”
+22
+
+=== Slide 23 Notes ===
+“And this is already reaching practice. Companies like
+Cleerly
+,
+Elucid
+, and
+HeartFlow
+provide AI-powered plaque quantification, supported by CPT codes and validated against IVUS and pathology.
+23
+
+=== Slide 24 Notes ===
+AI is helping to overcome several barriers to broader CCTA adoption.
+It addresses expertise gaps by providing decision support in hospitals without dedicated cardiac radiologists, ensuring more consistent reads.
+AI also improves cost-effectiveness—accelerating diagnosis, reducing unnecessary admissions, and optimizing resources.
+It facilitates complex analyses like FFR-CT by automating time-consuming steps.
+Finally, AI supports standardized training and quality control, serving as both a teaching tool and a benchmark for performance.
+24
+
+=== Slide 25 Notes ===
+Our vision for AI-powered Always-On CCTA is seamless integration into emergency workflows.
+It enables rapid and precise diagnosis, providing personalized risk assessment at the point of care.
+This translates into improved patient outcomes and optimized resource utilization.
+Ultimately, it positions CCTA as a true cornerstone of acute cardiac care—always available, always reliable, and powered by AI to transform how we manage chest pain in the ER.
+25
+
+=== Slide 26 Notes ===
+“In conclusion:
+CCTA is guideline-endorsed and highly effective for chest pain evaluation in the ER.
+But challenges and disparities persist.
+Strong evidence supports its clinical and economic value.
+AI is pivotal in expanding its role.
+Maximizing benefit requires a multi-pronged approach: technology, education, collaboration, and policy.
+Thank you.”
+26
+
+=== Slide 27 Notes ===
+27
