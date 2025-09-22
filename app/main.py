@@ -6,7 +6,7 @@ import logging
 from typing import Optional
 
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -111,3 +111,22 @@ async def root():
 async def list_voices():
     # For now, return configured presets (can extend to pull from fal.ai if API allows listing)
     return VoiceList(presets=settings.presets)
+
+
+@app.get("/download/{filename}")
+async def download_file(filename: str):
+    """Download endpoint that forces file download with proper headers"""
+    file_path = os.path.join(settings.storage_dir, filename)
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+    
+    # Extract original filename without hash suffix
+    base_name = filename.rsplit('-', 1)[0] if '-' in filename else filename.rsplit('.', 1)[0]
+    clean_filename = f"{base_name}.mp3"
+    
+    return FileResponse(
+        path=file_path,
+        filename=clean_filename,
+        media_type='application/octet-stream',
+        headers={"Content-Disposition": f"attachment; filename=\"{clean_filename}\""}
+    )

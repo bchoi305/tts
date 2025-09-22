@@ -1,0 +1,63 @@
+Slide Notes extracted from: HFpEF_Presentation_3.pptx
+Extraction date: 2025-09-22 08:19:53
+==================================================
+
+=== SLIDE 1 NOTES ===
+"Good morning, everyone. I'm excited to share our groundbreaking work on AI-powered HFpEF screening."
+
+=== SLIDE 2 NOTES ===
+“Heart failure with preserved ejection fraction is one of cardiology’s most challenging diagnoses. Unlike HFrEF, where reduced ejection fraction is obvious, HFpEF patients maintain normal systolic function but suffer from subtle diastolic dysfunction that’s extremely difficult to detect early.
+
+Current echocardiographic criteria, while standardized, suffer from significant inter-operator variability and suboptimal image quality. This leads to delayed diagnosis, missed cases, and suboptimal patient outcomes.
+Although cardiac MRI is the reference standard for structural and functional assessment, there is currently no reliably validated tool for the diagnosis of HFpEF using MRI.
+
+The purpose of this work is to develop a novel AI-driven cardiac MRI–based approach for objective, reproducible, and rapid HFpEF screening, aiming to overcome the inherent limitations of echocardiography and ultimately improve patient outcomes.”
+
+=== SLIDE 3 NOTES ===
+"We conducted a retrospective analysis of 1,060 subjects from our institution, including 447 HFpEF patients and 613 controls. All patients had both cardiac MRI and echocardiography within one month, ensuring diagnostic accuracy."
+"Our inclusion criteria were strict: LVEF ≥ 50% on MRI, and HFpEF was defined using established ASE/EACVI guidelines requiring at least 3 of 4 echocardiographic criteria.” Normal controls were defined as patients with preserved LVEF and none or only one abnormal parameter.
+
+"This represents one of the largest datasets specifically designed for AI-based HFpEF detection, with rigorous quality control and standardized imaging protocols across our 2019-2023 study period."
+
+=== SLIDE 4 NOTES ===
+"Our pipeline begins with fully automated left ventricular segmentation from short-axis cine MRI, followed by time-series extraction and standardization using linear interpolation and cubic spline smoothing."
+"We extracted 35 physiological features covering cardiac parameters, filling dynamics, and frequency domain metrics. This comprehensive feature set captures both traditional cardiac biomarkers and novel temporal patterns invisible to human analysis."
+"The core innovation is our residual 1D-CNN architecture, specifically designed for temporal sequence analysis. We systematically compared this against classical machine learning ensembles and hybrid approaches to identify the optimal strategy for this clinical problem."
+
+=== SLIDE 5 NOTES ===
+“This diagram illustrates the workflow: starting with automated segmentation using Myomics software, followed by time–volume curve extraction, data standardization, feature extraction and selection, and culminating in four different modeling approaches.”
+
+=== SLIDE 6 NOTES ===
+"We systematically evaluated four distinct approaches to understand which AI methodology works best for this specific clinical problem."
+"The residual 1D-CNN achieved 0.68 AUC working directly on sequences. The multimodal CNN showed improved performance at 0.70 AUC. Our combined ensemble reached 0.78 AUC. Most notably, our classical machine learning ensemble outperformed all deep learning approaches with 0.80 AUC."
+"This reveals a crucial insight: for cardiac time-series analysis, domain-specific feature engineering can be more powerful than end-to-end deep learning approaches, emphasizing the importance of medical expertise in AI development."
+
+=== SLIDE 7 NOTES ===
+"Our ROC curve analysis clearly demonstrates the superior discriminative performance of the classical ML ensemble across all decision thresholds. The separation between our best model and the others is consistent throughout the curve."
+"What's particularly notable is the perfectly balanced performance metrics - 74.8% across accuracy, precision, recall, and F1-score which is represented by green bars in this chart. This indicates our model is neither biased toward sensitivity nor specificity, making it robust for clinical deployment."
+"This balanced performance profile is exactly what we want in a clinical screening tool - consistent, reliable performance without bias toward false positives or false negatives."
+
+=== SLIDE 8 NOTES ===
+"For clinical AI adoption, interpretability is crucial. We used SHAP analysis to understand what our model learned and validate its clinical relevance.”
+
+SHAP summary plot (from SHapley Additive exPlanations)
+
+=== SLIDE 9 NOTES ===
+"Four features dominated our model: First, ejection fraction - higher values contribute positively, capturing the preserved EF paradox central to HFpEF diagnosis. Second, signal skewness - both extreme values matter, reflecting abnormal filling patterns characteristic of diastolic dysfunction. Third, spectral entropy - higher complexity indicates irregular dynamics typical of impaired relaxation. Fourth, time to peak filling rate - prolonged values directly indicate impaired diastolic function."
+"Remarkably, these AI-identified features perfectly align with known HFpEF pathophysiology, validating both our model's clinical relevance and our feature engineering approach."
+
+=== SLIDE 10 NOTES ===
+"Our system offers several clinical advantages: it's fully automated, eliminating operator variability; it's ultra-fast, providing immediate results; and it works with standard clinical MRI, requiring no protocol changes."
+"The integration pathway is straightforward: routine cardiac MRI feeds into automated segmentation, then AI analysis in 0.1 seconds, producing an HFpEF risk score for clinical decision support."
+"This could enable early HFpEF detection in routine cardiac imaging, potentially improving outcomes through earlier intervention and more precise patient management."
+
+=== SLIDE 11 NOTES ===
+"Like all research, our study has limitations. It's retrospective and single-center, and we're constrained by standard MRI temporal resolution."
+"The next critical step is prospective, multi-center validation to ensure generalizability across different populations, scanners, and clinical settings."
+
+=== SLIDE 12 NOTES ===
+"We've demonstrated the first AI system for automated HFpEF screening from cardiac MRI time-series, achieving "This technology could transform HFpEF diagnosis from subjective, variable assessment to objective, rapid screening integrated into routine cardiac imaging."
+"Our vision is AI-powered precision cardiology, where intelligent analysis enhances diagnostic accuracy and improves patient outcomes.
+
+=== SLIDE 13 NOTES ===
+Thank you for your attention - I'm happy to take questions."

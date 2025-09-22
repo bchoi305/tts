@@ -6,12 +6,13 @@ export default function App() {
   const [file, setFile] = useState(null)
   const [presets, setPresets] = useState([])
   const [preset, setPreset] = useState('')
-  const [jobId, setJobId] = useState(null)
-  const [status, setStatus] = useState(null)
-  const [audioUrl, setAudioUrl] = useState(null)
+  const [jobId, setJobId] = useState(() => localStorage.getItem('tts-job-id') || null)
+  const [status, setStatus] = useState(() => localStorage.getItem('tts-status') || null)
+  const [audioUrl, setAudioUrl] = useState(() => localStorage.getItem('tts-audio-url') || null)
   const [error, setError] = useState(null)
   const [totalChunks, setTotalChunks] = useState(null)
   const [processedChunks, setProcessedChunks] = useState(null)
+  const [filename, setFilename] = useState(() => localStorage.getItem('tts-filename') || null)
 
   // Load voice presets from API
   useEffect(() => {
@@ -48,7 +49,11 @@ export default function App() {
             const path = u.startsWith('/') ? u : `/${u}`
             return `${base}${path}`
           }
-          setAudioUrl(resolveUrl(data.audio_url))
+          const resolvedUrl = resolveUrl(data.audio_url)
+          setAudioUrl(resolvedUrl)
+          // Persist to localStorage
+          localStorage.setItem('tts-status', data.status)
+          localStorage.setItem('tts-audio-url', resolvedUrl)
           clearInterval(t)
         }
         if (data.status === 'failed') {
@@ -83,9 +88,44 @@ export default function App() {
       const data = await r.json()
       setJobId(data.job_id)
       setStatus(data.status)
+      setFilename(file.name)
+      // Persist to localStorage
+      localStorage.setItem('tts-job-id', data.job_id)
+      localStorage.setItem('tts-status', data.status)
+      localStorage.setItem('tts-filename', file.name)
     } catch (e) {
       setError(String(e))
     }
+  }
+
+  const clearState = () => {
+    setJobId(null)
+    setStatus(null)
+    setAudioUrl(null)
+    setError(null)
+    setTotalChunks(null)
+    setProcessedChunks(null)
+    setFilename(null)
+    localStorage.removeItem('tts-job-id')
+    localStorage.removeItem('tts-status')
+    localStorage.removeItem('tts-audio-url')
+    localStorage.removeItem('tts-filename')
+  }
+
+  const getDownloadUrl = (audioUrl) => {
+    if (!audioUrl) return null
+    // Extract filename from audioUrl (e.g., /files/filename.mp3)
+    const urlFilename = audioUrl.split('/').pop()
+    const base = (API_URL || '').replace(/\/+$/, '')
+    return `${base}/download/${urlFilename}`
+  }
+
+  const copyFilePath = () => {
+    if (!audioUrl) return
+    const urlFilename = audioUrl.split('/').pop()
+    const filePath = `/Users/my_studio/proj/projects/tts/storage/${urlFilename}`
+    navigator.clipboard.writeText(filePath)
+    alert('File path copied to clipboard!')
   }
 
   return (
@@ -104,7 +144,14 @@ export default function App() {
             ))}
           </select>
         </div>
-        <button type="submit">Generate Audio</button>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button type="submit">Generate Audio</button>
+          {(audioUrl || status) && (
+            <button type="button" onClick={clearState} style={{ backgroundColor: '#f44336', color: 'white' }}>
+              Clear Results
+            </button>
+          )}
+        </div>
       </form>
       {status && <p>Status: <strong>{status}</strong></p>}
       {(status === 'queued' || status === 'started' || status === 'running') && totalChunks && (
@@ -115,10 +162,54 @@ export default function App() {
       )}
       {error && <p style={{ color: 'crimson' }}>Error: {error}</p>}
       {audioUrl && (
-        <div style={{ marginTop: '1rem' }}>
+        <div style={{ marginTop: '1rem', padding: '1rem', border: '1px solid #ddd', borderRadius: '4px' }}>
+          <h3>✅ Audio Generated Successfully!</h3>
+          {filename && <p><strong>File:</strong> {filename}</p>}
           <audio controls src={audioUrl} style={{ width: '100%' }} />
-          <div style={{ marginTop: '0.5rem' }}>
-            <a href={audioUrl} download>Download MP3</a>
+          <div style={{ marginTop: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <a 
+              href={getDownloadUrl(audioUrl)} 
+              download
+              style={{ 
+                backgroundColor: '#4CAF50', 
+                color: 'white', 
+                padding: '8px 16px', 
+                textDecoration: 'none', 
+                borderRadius: '4px',
+                fontSize: '14px'
+              }}
+            >
+              📥 Download MP3
+            </a>
+            <button 
+              onClick={copyFilePath}
+              style={{ 
+                backgroundColor: '#2196F3', 
+                color: 'white', 
+                padding: '8px 16px', 
+                border: 'none', 
+                borderRadius: '4px',
+                fontSize: '14px',
+                cursor: 'pointer'
+              }}
+            >
+              📋 Copy File Path
+            </button>
+            <a 
+              href={audioUrl} 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                backgroundColor: '#FF9800', 
+                color: 'white', 
+                padding: '8px 16px', 
+                textDecoration: 'none', 
+                borderRadius: '4px',
+                fontSize: '14px'
+              }}
+            >
+              🎵 Open in New Tab
+            </a>
           </div>
         </div>
       )}
